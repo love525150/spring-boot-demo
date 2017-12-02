@@ -1,4 +1,4 @@
-package org.allen.POJO;
+package org.allen.model;
 
 /**
  * Created by Dick on 2017/4/1.
