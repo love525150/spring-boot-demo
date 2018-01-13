@@ -60,11 +60,21 @@
         </dependency>
         <!-- redis end -->
 
+        <!-- dubbo -->
         <dependency>
             <groupId>io.dubbo.springboot</groupId>
             <artifactId>spring-boot-starter-dubbo</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <!-- dubbo end -->
+
+        <!-- baturu -->
+        <dependency>
+            <groupId>com.baturu.quote</groupId>
+            <artifactId>quote-service-api</artifactId>
+            <version>1.1.66_zhiYingTag-SNAPSHOT</version>
+        </dependency>
+        <!-- baturu end -->
     </dependencies>
 
     <!-- Package as an executable jar -->
