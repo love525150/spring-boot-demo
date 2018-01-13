@@ -6,6 +6,8 @@ import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Set;
+
 @RestController
 @RequestMapping("monitor")
 public class MonitorController {
@@ -19,7 +21,7 @@ public class MonitorController {
 
     @RequestMapping("redis")
     public String redis() {
-        ValueOperations<String, String> operations = stringRedisTemplate.opsForValue();
-        return operations.get("key");
+        Set<String> keys = stringRedisTemplate.keys("*");
+        return String.valueOf(keys.size());
     }
 }
